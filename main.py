@@ -11,7 +11,7 @@ class YtPlaylist:
     def __init__(self, playListID=None):
         self.playListData = {}
         self.playlistLink = f"https://www.youtube.com/playlist?list={playListID}"
-        self.driver = webdriver.Chrome(service=Service("C:/Users/sohel/OneDrive/Desktop/Python/ChromeDriver/chromedriver.exe"))
+        self.driver = webdriver.Chrome(service=Service("chromedriver.exe"))
         self.driver.maximize_window()
 
     def pageOpen(self, url, xpath='//ytd-page-manager[@id="page-manager"]'):
